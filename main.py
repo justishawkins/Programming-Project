@@ -10,8 +10,7 @@ def main(winstyle=0):
 
     while True:
         for event in pygame.event.get():
-            if event.type == QUIT or \
-                (event.type == KEYDOWN and event.key == K_ESCAPE):
+            if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
                     return
         keystate = pygame.key.get_pressed()
 main()
